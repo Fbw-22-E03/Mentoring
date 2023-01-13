@@ -3,8 +3,13 @@
 // Make sure you are connected to enable completions and to be able to run a playground.
 // Use Ctrl+Space inside a snippet or a string literal to trigger completions.
 
-
-const footballers = require('/Users/james/Documents/DCI/Groups/E03/LiveCoding/230113/footballers.json')
+// <<< HARD-CODED absolute path to your JSON file
+const file = '/Users/james/Documents/DCI/Groups/E03/LiveCoding/230113/Football/footballers.json'
+// NOTE: Right-click on `footballers.json` in the Explorer pane
+// and select "Copy Path", then paste the contents of the
+// clipboard between the quote marks above.
+// HARD-CODED >>>
+const footballers = require(file)
 
 // Select the database to use.
 use('football');
