@@ -1,0 +1,19 @@
+// MongoDB Playground
+// To disable this template go to Settings | MongoDB | Use Default Template For Playground.
+// Make sure you are connected to enable completions and to be able to run a playground.
+// Use Ctrl+Space inside a snippet or a string literal to trigger completions.
+
+
+const footballers = require('/Users/james/Documents/DCI/Groups/E03/LiveCoding/230113/footballers.json')
+
+// Select the database to use.
+use('football');
+
+// The drop() command destroys all data from a collection.
+// Make sure you run it against the correct database and collection.
+db.players.drop();
+
+// Insert a few documents into the chosen collection.
+db.players.insertMany(footballers)
+  
+
